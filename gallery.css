@@ -1,0 +1,40 @@
+/* Styles for the image gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+}
+
+.featured {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.featured img {
+  max-width: 800px;
+  height: auto;
+  border: 2px solid #ccc;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Styles for active thumbnail */
+.thumbnail.active img {
+  border-color: #ff0000;
+}
